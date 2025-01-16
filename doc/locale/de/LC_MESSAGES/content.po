@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-16 10:09+0200\n"
-"PO-Revision-Date: 2025-01-13 15:21+0000\n"
+"PO-Revision-Date: 2025-01-16 11:21+0000\n"
 "Last-Translator: Markus Hlinka <mah@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/"
 "manual-importexportticket/rel-10_1/de/>\n"
@@ -31,7 +31,7 @@ msgstr "Beschreibung"
 
 #: ../../content/index.rst:20
 msgid "Ticket backend for the ImportExport module."
-msgstr ""
+msgstr "Ticket-Backend für das ImportExport-Modul."
 
 #: ../../content/index.rst:23
 msgid "System requirements"
@@ -51,7 +51,7 @@ msgstr "Pakete"
 
 #: ../../content/index.rst:31
 msgid "ImportExport 10.1.2"
-msgstr ""
+msgstr "ImportExport 10.1.2"
 
 #: ../../content/index.rst:34
 msgid "Third-party software"
@@ -72,6 +72,11 @@ msgid ""
 "Identifiers can be used for tickets and articles to potentially skip the "
 "article. Rules are as follows:"
 msgstr ""
+"Im ImportExport-Bereich der Verwaltungsoberfläche ist ein neues Backend "
+"(Ticket) verfügbar. Die allgemeine Verwendung ist dieselbe wie bei anderen "
+"ImportExport-Modulen. Identifikatoren können für Tickets und Artikel "
+"verwendet werden, um den Artikel möglicherweise zu überspringen. Die Regeln "
+"sind wie folgt:"
 
 #: ../../content/index.rst:41
 msgid ""
@@ -121,6 +126,8 @@ msgid ""
 "When using the extended synchronization, TicketID as well as "
 "Article_ArticleID have to be provided."
 msgstr ""
+"Bei Verwendung der erweiterten Synchronisierung müssen sowohl TicketID als "
+"auch Article_ArticleID angegeben werden."
 
 #: ../../content/index.rst:49
 msgid "Configuration Reference"
@@ -128,23 +135,23 @@ msgstr "Konfigurationsreferenz"
 
 #: ../../content/index.rst:52
 msgid "Core::ImportExport::ObjectBackend::ModuleRegistration"
-msgstr ""
+msgstr "Core::ImportExport::ObjectBackend::ModuleRegistration"
 
 #: ../../content/index.rst:55
 msgid "ImportExport::ObjectBackendRegistration###Ticket"
-msgstr ""
+msgstr "ImportExport::ObjectBackendRegistration###Ticket"
 
 #: ../../content/index.rst:56
 msgid "Object backend module registration for the import/export module."
-msgstr ""
+msgstr "Registrierung des Objekt-Backend-Moduls für das Import/Export-Modul."
 
 #: ../../content/index.rst:59
 msgid "Core::ImportExport::ObjectBackend::Ticket"
-msgstr ""
+msgstr "Core::ImportExport::ObjectBackend::Ticket"
 
 #: ../../content/index.rst:62
 msgid "ImportExport::Ticket::SynchronizeWithForeignDB"
-msgstr ""
+msgstr "ImportExport::Ticket::SynchronizeWithForeignDB"
 
 #: ../../content/index.rst:63
 msgid ""
@@ -153,18 +160,24 @@ msgid ""
 "imported tickets on this system. This is only available for created, not "
 "for updated tickets."
 msgstr ""
+"Wenn aktiviert, werden zusätzliche Daten wie die Historie und Links aus "
+"einer fremden DB, die die exportierten Tickets enthält, gelesen und den "
+"importierten Tickets auf diesem System hinzugefügt. Dies ist nur für "
+"erstellte, nicht für aktualisierte Tickets verfügbar."
 
 #: ../../content/index.rst:66
 msgid "Core::ImportExport::ObjectBackend::Ticket::ImportValueMaps"
-msgstr ""
+msgstr "Core::ImportExport::ObjectBackend::Ticket::ImportValueMaps"
 
 #: ../../content/index.rst:69
 msgid "ImportExport::Ticket::ImportValueMap###001-Custom"
-msgstr ""
+msgstr "ImportExport::Ticket::ImportValueMap###001-Custom"
 
 #: ../../content/index.rst:70
 msgid "Value map. Define a key and a value map from import file to OTOBO."
 msgstr ""
+"Wertzuordnung. Definieren Sie einen Schlüssel und eine Wertezuordnung von "
+"der Importdatei zu OTOBO."
 
 #: ../../content/index.rst:73
 msgid "About"
