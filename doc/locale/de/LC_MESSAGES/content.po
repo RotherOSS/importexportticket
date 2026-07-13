@@ -8,63 +8,69 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 05:05+0200\n"
+"POT-Creation-Date: 2026-06-23 15:23+0000\n"
 "PO-Revision-Date: 2026-03-08 11:03+0000\n"
 "Last-Translator: Stefan Rother <sr@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/manual-"
 "importexportticket/master/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.16\n"
 "Generated-By: Babel 2.4.0\n"
 
-#: ../../content/index.rst:20
-msgid "Sacrifice to Sphinx"
-msgstr "Sacrifice to Sphinx"
+#: ../content/index.rst:5
+#, fuzzy
+#| msgid "Contact"
+msgid "Contents"
+msgstr "Kontakt"
 
-#: ../../content/index.rst:23
+#: ../content/index.rst:10
 msgid "Description"
 msgstr "Beschreibung"
 
-#: ../../content/index.rst:24
-msgid "Ticket backend for the ImportExport module."
-msgstr "Ticket-Backend für das ImportExport-Modul."
+#: ../content/index.rst:11
+msgid ""
+"Ticket backend for the ImportExport module. This backend allows to import "
+"and export tickets with their articles. It also supports the synchronization "
+"of the tickets with a foreign database, which can be used to import the "
+"history of the tickets."
+msgstr ""
 
-#: ../../content/index.rst:27
+#: ../content/index.rst:14
 msgid "System requirements"
 msgstr "Systemanforderungen"
 
-#: ../../content/index.rst:30
+#: ../content/index.rst:17
 msgid "Framework"
 msgstr "Framework"
 
-#: ../../content/index.rst:31
+#: ../content/index.rst:18
 msgid "OTOBO 11.0.x"
 msgstr "OTOBO 11.0.x"
 
-#: ../../content/index.rst:34
+#: ../content/index.rst:21
 msgid "Packages"
 msgstr "Pakete"
 
-#: ../../content/index.rst:37
+#: ../content/index.rst:24
 msgid "Third-party software"
 msgstr "Drittanbieter-Software"
 
-#: ../../content/index.rst:38
+#: ../content/index.rst:25
 msgid "\\-"
 msgstr "\\-"
 
-#: ../../content/index.rst:41
+#: ../content/index.rst:28
 msgid "Usage"
 msgstr "Verwendung"
 
-#: ../../content/index.rst:42
+#: ../content/index.rst:29
 msgid ""
-"In the ImportExport section of the admin interface a new backend (Ticket)"
-" is available. General usage is the same as other ImportExport backends. "
+"In the ImportExport section of the admin interface a new backend (Ticket) is "
+"available. General usage is the same as other ImportExport backends. "
 "Identifiers can be used for tickets and articles to potentially skip the "
 "article. Rules are as follows:"
 msgstr ""
@@ -74,15 +80,15 @@ msgstr ""
 "verwendet werden, um den Artikel möglicherweise zu überspringen. Die Regeln "
 "sind wie folgt:"
 
-#: ../../content/index.rst:44
+#: ../content/index.rst:31
 msgid ""
-"TicketID or TicketNumber are required to be marked as identifier for "
-"ticket identification"
+"TicketID or TicketNumber are required to be marked as identifier for ticket "
+"identification"
 msgstr ""
 "TicketID oder TicketNumber müssen als Identifikator für die Ticket-"
 "Identifikation gekennzeichnet werden"
 
-#: ../../content/index.rst:45
+#: ../content/index.rst:32
 msgid ""
 "Article_ArticleID is required to be marked as identifier for article "
 "identification"
@@ -90,24 +96,23 @@ msgstr ""
 "Artikel_ArtikelID muss als Identifikator für die Artikelidentifikation "
 "gekennzeichnet werden"
 
-#: ../../content/index.rst:46
+#: ../content/index.rst:33
 msgid ""
-"When using identification and the object is found in the system, tickets "
-"are just updated instead of created, articles are skipped"
+"When using identification and the object is found in the system, tickets are "
+"just updated instead of created, articles are skipped"
 msgstr ""
 "Wenn die Identifizierung verwendet wird und das Objekt im System gefunden "
 "wird, werden Tickets nur aktualisiert statt erstellt, Artikel werden "
 "übersprungen"
 
-#: ../../content/index.rst:47
+#: ../content/index.rst:34
 msgid ""
-"Regardless of whether identification is used or not, if objects are "
-"created, TicketID and ArticleID will be generated newly by OTOBO, "
-"TicketNumber (if included) will be set to the one of the csv. The latter "
-"will lead to an import error if the TicketNumber already exists (no "
-"identification used), and can also be problematic if imported from a "
-"system with a different SystemID or TicketNumber generator - use with "
-"care."
+"Regardless of whether identification is used or not, if objects are created, "
+"TicketID and ArticleID will be generated newly by OTOBO, TicketNumber (if "
+"included) will be set to the one of the csv. The latter will lead to an "
+"import error if the TicketNumber already exists (no identification used), "
+"and can also be problematic if imported from a system with a different "
+"SystemID or TicketNumber generator - use with care."
 msgstr ""
 "Unabhängig davon, ob eine Identifikation verwendet wird oder nicht, werden "
 "bei der Erstellung von Objekten die TicketID und die ArticleID von OTOBO neu "
@@ -117,138 +122,138 @@ msgstr ""
 "problematisch sein, wenn es aus einem System mit einem anderen SystemID- "
 "oder TicketNumber-Generator importiert wird - mit Vorsicht verwenden."
 
-#: ../../content/index.rst:49
+#: ../content/index.rst:36
 msgid ""
 "The console commands Admin::ImportExport::Export and "
-"Admin::ImportExport::Import provide functionality on the command line. "
-"Using the command line also allow chunked export and import."
+"Admin::ImportExport::Import provide functionality on the command line. Using "
+"the command line also allow chunked export and import."
 msgstr ""
-"Die Konsolenbefehle Admin::ImportExport::Export und Admin::ImportExport::"
-"Import bieten Funktionen für die Befehlszeile. Die Verwendung der "
-"Kommandozeile ermöglicht auch den Export und Import in Blöcken."
+"Die Konsolenbefehle Admin::ImportExport::Export und "
+"Admin::ImportExport::Import bieten Funktionen für die Befehlszeile. Die "
+"Verwendung der Kommandozeile ermöglicht auch den Export und Import in "
+"Blöcken."
 
-#: ../../content/index.rst:52
+#: ../content/index.rst:39
 msgid ""
 "In order to achieve better performance, some SysConfig setting are "
-"temporarily altered during Export and Import. This means that "
-"ElasticSearch has to be reindexed after an import."
+"temporarily altered during Export and Import. This means that ElasticSearch "
+"has to be reindexed after an import."
 msgstr ""
 "Um eine bessere Leistung zu erreichen, werden einige SysConfig-Einstellungen "
 "während des Exports und Imports vorübergehend geändert. Dies bedeutet, dass "
 "ElasticSearch nach einem Import neu indiziert werden muss."
 
-#: ../../content/index.rst:55
+#: ../content/index.rst:42
+#, fuzzy
+#| msgid ""
+#| "There is an import feature called extended synchronisation. This feature "
+#| "can be activated via the SysConfig. When using the extended "
+#| "synchronization, TicketID as well as Article_ArticleID have to be "
+#| "provided."
 msgid ""
-"There is an import feature called extended synchronisation. This feature "
-"can be activated via the SysConfig. When using the extended "
-"synchronization, TicketID as well as Article_ArticleID have to be "
-"provided."
+"There is an import feature called extended synchronisation. This feature can "
+"be activated via the SysConfig. When using the extended synchronization, "
+"TicketID as well as Article_ArticleID have to be provided. This means that "
+"the history of the tickets will be imported. Additionally, the links of the "
+"tickets will be imported."
 msgstr ""
 "Es gibt eine Importfunktion namens erweiterte Synchronisation. Diese "
 "Funktion kann über die SysConfig aktiviert werden. Bei Verwendung der "
 "erweiterten Synchronisierung müssen sowohl TicketID als auch "
 "Article_ArticleID angegeben werden."
 
-#: ../../content/index.rst:59
+#: ../content/index.rst:45
+msgid ""
+"If old, imported ticket numbers with a different system ID (important, but "
+"with the same ticket number generator) are also to be recognized in follow-"
+"ups, install the *LegacySystemIDSupport* package and enter the original "
+"system ID in the settings."
+msgstr ""
+
+#: ../content/index.rst:48
 msgid "Configuration Reference"
 msgstr "Konfigurationsreferenz"
 
-#: ../../content/index.rst:62
+#: ../content/index.rst:51
 msgid "Core::ImportExport::ObjectBackend::ModuleRegistration"
 msgstr "Core::ImportExport::ObjectBackend::ModuleRegistration"
 
-#: ../../content/index.rst:65
+#: ../content/index.rst:54
 msgid "ImportExport::ObjectBackendRegistration###Ticket"
 msgstr "ImportExport::ObjectBackendRegistration###Ticket"
 
-#: ../../content/index.rst:66
+#: ../content/index.rst:55
 msgid "Object backend module registration for the import/export module."
 msgstr "Registrierung des Objekt-Backend-Moduls für das Import/Export-Modul."
 
-#: ../../content/index.rst:69
+#: ../content/index.rst:58
 msgid "Core::ImportExport::ObjectBackend::Ticket"
 msgstr "Core::ImportExport::ObjectBackend::Ticket"
 
-#: ../../content/index.rst:72
+#: ../content/index.rst:61
 msgid "ImportExport::Ticket::SynchronizeWithForeignDB"
 msgstr "ImportExport::Ticket::SynchronizeWithForeignDB"
 
-#: ../../content/index.rst:73
+#: ../content/index.rst:62
 msgid ""
-"If activated additional data such as the history and links will be read "
-"from a foreign DB containing the exported tickets and added to the "
-"imported tickets on this system. This is only available for created, not "
-"for updated tickets."
+"If activated additional data such as the history and links will be read from "
+"a foreign DB containing the exported tickets and added to the imported "
+"tickets on this system. This is only available for created, not for updated "
+"tickets."
 msgstr ""
 "Wenn aktiviert, werden zusätzliche Daten wie die Historie und Links aus "
 "einer fremden DB, die die exportierten Tickets enthält, gelesen und den "
 "importierten Tickets auf diesem System hinzugefügt. Dies ist nur für "
 "erstellte, nicht für aktualisierte Tickets verfügbar."
 
-#: ../../content/index.rst:76
+#: ../content/index.rst:65
 msgid "Core::ImportExport::ObjectBackend::Ticket::ImportValueMaps"
 msgstr "Core::ImportExport::ObjectBackend::Ticket::ImportValueMaps"
 
-#: ../../content/index.rst:79
+#: ../content/index.rst:68
 msgid "ImportExport::Ticket::ImportValueMap###001-Custom"
 msgstr "ImportExport::Ticket::ImportValueMap###001-Custom"
 
-#: ../../content/index.rst:80
+#: ../content/index.rst:69
 msgid "Value map. Define a key and a value map from import file to OTOBO."
 msgstr ""
 "Wertzuordnung. Definieren Sie einen Schlüssel und eine Wertezuordnung von "
 "der Importdatei zu OTOBO."
 
-#: ../../content/index.rst:83
+#: ../content/index.rst:72
 msgid "About"
 msgstr "Über"
 
-#: ../../content/index.rst:86
+#: ../content/index.rst:75
 msgid "Contact"
 msgstr "Kontakt"
 
-#: ../../content/index.rst:87
+#: ../content/index.rst:76
 msgid "Rother OSS GmbH"
 msgstr "Rother OSS GmbH"
 
-#: ../../content/index.rst:88
+#: ../content/index.rst:77
 msgid "Email: hello@otobo.io"
 msgstr "E-Mail: hello@otobo.io"
 
-#: ../../content/index.rst:89
+#: ../content/index.rst:78
 msgid "Web: https://otobo.io"
 msgstr "Web: https://otobo.io"
 
-#: ../../content/index.rst:92
+#: ../content/index.rst:81
 msgid "Version"
 msgstr "Version"
 
-#: ../../content/index.rst:93
+#: ../content/index.rst:82
 msgid ""
 "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-"
 "datestamp|"
 msgstr ""
-"Autor: |doc-vendor| / Version: |doc-version| / Datum der Veröffentlichung: "
-"|doc-datestamp|"
+"Autor: |doc-vendor| / Version: |doc-version| / Datum der Veröffentlichung: |"
+"doc-datestamp|"
 
-#~ msgid ""
-#~ "In the ImportExport section of the "
-#~ "admin interface a new backend (Ticket)"
-#~ " is available. General usage is the"
-#~ " same as other ImportExport modules. "
-#~ "Identifiers can be used for tickets "
-#~ "and articles to potentially skip the "
-#~ "article. Rules are as follows:"
-#~ msgstr ""
+#~ msgid "Sacrifice to Sphinx"
+#~ msgstr "Sacrifice to Sphinx"
 
-#~ msgid ""
-#~ "When using the extended synchronization, "
-#~ "TicketID as well as Article_ArticleID "
-#~ "have to be provided."
-#~ msgstr ""
-
-#~ msgid "Email: hello@otobo.de"
-#~ msgstr ""
-
-#~ msgid "Web: https://otobo.de"
-#~ msgstr ""
+#~ msgid "Ticket backend for the ImportExport module."
+#~ msgstr "Ticket-Backend für das ImportExport-Modul."
