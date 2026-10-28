@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-14 11:00+0000\n"
-"PO-Revision-Date: 2026-10-28 19:41+0000\n"
+"PO-Revision-Date: 2026-10-28 21:41+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-10-1/"
 "addons/manuals/importexportticket-documentation/hu/>\n"
@@ -31,7 +31,7 @@ msgstr "Leírás"
 
 #: ../content/index.rst:11
 msgid "Ticket backend for the ImportExport module."
-msgstr ""
+msgstr "Jegy háttérprogram az importálás és exportálás modulhoz."
 
 #: ../content/index.rst:14
 msgid "System requirements"
@@ -72,24 +72,35 @@ msgid ""
 "Identifiers can be used for tickets and articles to potentially skip the "
 "article. Rules are as follows:"
 msgstr ""
+"Az adminisztrátori felület importálás és exportálás szakaszában egy új "
+"háttérprogram (jegy) érhető el. Az általános használata megegyezik a többi "
+"importáló és exportáló modullal. Azonosítók használhatók a jegyekhez és a "
+"bejegyzésekhez a bejegyzés lehetséges kihagyásához. A szabályok a következők:"
 
 #: ../content/index.rst:32
 msgid ""
 "TicketID or TicketNumber are required to be marked as identifier for ticket "
 "identification"
 msgstr ""
+"A „TicketID” vagy a „TicketNumber” kötelezően azonosítóként jelölendő meg a "
+"jegy azonosításához"
 
 #: ../content/index.rst:33
 msgid ""
 "Article_ArticleID is required to be marked as identifier for article "
 "identification"
 msgstr ""
+"Az „Article_ArticleID” kötelezően azonosítóként jelölendő meg a bejegyzés "
+"azonosításához"
 
 #: ../content/index.rst:34
 msgid ""
 "When using identification and the object is found in the system, tickets are "
 "just updated instead of created, articles are skipped"
 msgstr ""
+"Azonosítás használatakor és ha az objektum megtalálható a rendszerben, akkor "
+"a jegyek csak frissülnek a létrehozás helyett, a bejegyzések pedig "
+"kihagyásra kerülnek"
 
 #: ../content/index.rst:35
 msgid ""
@@ -100,12 +111,22 @@ msgid ""
 "and can also be problematic if imported from a system with a different "
 "SystemID or TicketNumber generator - use with care."
 msgstr ""
+"Függetlenül attól, hogy azonosítás van-e használva vagy sem, ha objektumok "
+"jönnek létre, az OTOBO új jegyazonosítót („TicketID”) és bejegyzésazonosítót "
+"(„ArticleID”) fog előállítani, a jegyszám („TicketNumber”, ha tartalmazza) a "
+"CSV-ben lévő egyikére lesz beállítva. Ez utóbbi importálási hibához fog "
+"vezetni, ha a jegyszám már létezik (nincs azonosítás használva), és akkor is "
+"problémás lehet, ha különböző rendszer-azonosítóval („SystemID”) vagy "
+"jegyszám-előállítóval rendelkező rendszerből kerül importálásra. Óvatosan "
+"használja!"
 
 #: ../content/index.rst:37
 msgid ""
 "When using the extended synchronization, TicketID as well as "
 "Article_ArticleID have to be provided."
 msgstr ""
+"A kiterjesztett szinkronizálás használatakor a „TicketID” és az „"
+"Article_ArticleID” megadása is kötelező."
 
 #: ../content/index.rst:40
 msgid "Configuration Reference"
@@ -113,11 +134,11 @@ msgstr "Beállítások hivatkozása"
 
 #: ../content/index.rst:43
 msgid "Core::ImportExport::ObjectBackend::ModuleRegistration"
-msgstr ""
+msgstr "Core::ImportExport::ObjectBackend::ModuleRegistration"
 
 #: ../content/index.rst:46
 msgid "ImportExport::ObjectBackendRegistration###Ticket"
-msgstr ""
+msgstr "ImportExport::ObjectBackendRegistration###Ticket"
 
 #: ../content/index.rst:47
 msgid "Object backend module registration for the import/export module."
@@ -126,11 +147,11 @@ msgstr ""
 
 #: ../content/index.rst:50
 msgid "Core::ImportExport::ObjectBackend::Ticket"
-msgstr ""
+msgstr "Core::ImportExport::ObjectBackend::Ticket"
 
 #: ../content/index.rst:53
 msgid "ImportExport::Ticket::SynchronizeWithForeignDB"
-msgstr ""
+msgstr "ImportExport::Ticket::SynchronizeWithForeignDB"
 
 #: ../content/index.rst:54
 msgid ""
@@ -139,18 +160,25 @@ msgid ""
 "tickets on this system. This is only available for created, not for updated "
 "tickets."
 msgstr ""
+"Ha aktiválva van, akkor további adatok, mint például az előzmények és a "
+"hivatkozások beolvasásra kerülnek egy olyan külső adatbázisból, amely az "
+"exportált jegyeket tartalmazza, és hozzáadásra kerülnek az ezen a rendszeren "
+"importált jegyekhez. Ez csak a létrehozott jegyeknél érhető el, a frissített "
+"jegyeknél nem."
 
 #: ../content/index.rst:57
 msgid "Core::ImportExport::ObjectBackend::Ticket::ImportValueMaps"
-msgstr ""
+msgstr "Core::ImportExport::ObjectBackend::Ticket::ImportValueMaps"
 
 #: ../content/index.rst:60
 msgid "ImportExport::Ticket::ImportValueMap###001-Custom"
-msgstr ""
+msgstr "ImportExport::Ticket::ImportValueMap###001-Custom"
 
 #: ../content/index.rst:61
 msgid "Value map. Define a key and a value map from import file to OTOBO."
 msgstr ""
+"Értékleképezés. Kulcs és érték leképezés meghatározása az importálási "
+"fájlból az OTOBO-ra."
 
 #: ../content/index.rst:64
 msgid "About"
